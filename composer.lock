@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1bda6f2db4a91a2429cee91bfc866897",
+    "content-hash": "3452e87ea93cb0c07cb309b1e4503670",
     "packages": [
         {
             "name": "doctrine/cache",
@@ -2086,6 +2086,78 @@
                 }
             ],
             "time": "2023-10-31T08:07:48+00:00"
+        },
+        {
+            "name": "symfony/asset-mapper",
+            "version": "v6.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/asset-mapper.git",
+                "reference": "02385e3e427eceacb103a3b47cb1c1582a9b494d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/asset-mapper/zipball/02385e3e427eceacb103a3b47cb1c1582a9b494d",
+                "reference": "02385e3e427eceacb103a3b47cb1c1582a9b494d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "symfony/filesystem": "^5.4|^6.0",
+                "symfony/http-client": "^5.4|^6.0"
+            },
+            "require-dev": {
+                "symfony/asset": "^5.4|^6.0",
+                "symfony/browser-kit": "^5.4|^6.0",
+                "symfony/console": "^5.4|^6.0",
+                "symfony/finder": "^5.4|^6.0",
+                "symfony/framework-bundle": "^6.3",
+                "symfony/http-foundation": "^5.4|^6.0",
+                "symfony/http-kernel": "^5.4|^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\AssetMapper\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Maps directories of assets & makes them available in a public directory with versioned filenames.",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/asset-mapper/tree/v6.3.6"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-10-10T13:57:34+00:00"
         },
         {
             "name": "symfony/cache",
@@ -6111,6 +6183,75 @@
             "time": "2023-07-30T20:28:31+00:00"
         },
         {
+            "name": "symfony/stimulus-bundle",
+            "version": "v2.13.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/stimulus-bundle.git",
+                "reference": "d7190749571a7a02664b677dab37f8949315b4d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/stimulus-bundle/zipball/d7190749571a7a02664b677dab37f8949315b4d5",
+                "reference": "d7190749571a7a02664b677dab37f8949315b4d5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "symfony/config": "^5.4|^6.0|^7.0",
+                "symfony/dependency-injection": "^5.4|^6.0|^7.0",
+                "symfony/deprecation-contracts": "^2.0|^3.0",
+                "symfony/finder": "^5.4|^6.0|^7.0",
+                "symfony/http-kernel": "^5.4|^6.0|^7.0",
+                "twig/twig": "^2.15.3|^3.4.3"
+            },
+            "require-dev": {
+                "symfony/asset-mapper": "^6.3|^7.0",
+                "symfony/framework-bundle": "^5.4|^6.0|^7.0",
+                "symfony/phpunit-bridge": "^5.4|^6.0|^7.0",
+                "symfony/twig-bundle": "^5.4|^6.0|^7.0",
+                "zenstruck/browser": "^1.4"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\UX\\StimulusBundle\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Integration with your Symfony app & Stimulus!",
+            "keywords": [
+                "symfony-ux"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/stimulus-bundle/tree/v2.13.2"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-11-11T01:20:31+00:00"
+        },
+        {
             "name": "symfony/stopwatch",
             "version": "v6.3.0",
             "source": {
@@ -6625,6 +6766,90 @@
             "time": "2023-10-31T08:07:48+00:00"
         },
         {
+            "name": "symfony/ux-twig-component",
+            "version": "v2.13.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/ux-twig-component.git",
+                "reference": "7635b2e41f222724aa7d806965da46600cf3aad4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/ux-twig-component/zipball/7635b2e41f222724aa7d806965da46600cf3aad4",
+                "reference": "7635b2e41f222724aa7d806965da46600cf3aad4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "symfony/dependency-injection": "^5.4|^6.0|^7.0",
+                "symfony/deprecation-contracts": "^2.2|^3.0",
+                "symfony/event-dispatcher": "^5.4|^6.0|^7.0",
+                "symfony/property-access": "^5.4|^6.0|^7.0",
+                "twig/twig": "^2.14.7|^3.0.4"
+            },
+            "conflict": {
+                "symfony/config": "<5.4.0"
+            },
+            "require-dev": {
+                "symfony/console": "^5.4|^6.0|^7.0",
+                "symfony/css-selector": "^5.4|^6.0|^7.0",
+                "symfony/dom-crawler": "^5.4|^6.0|^7.0",
+                "symfony/framework-bundle": "^5.4|^6.0|^7.0",
+                "symfony/phpunit-bridge": "^6.0|^7.0",
+                "symfony/stimulus-bundle": "^2.9.1",
+                "symfony/stopwatch": "^5.4|^6.0|^7.0",
+                "symfony/twig-bundle": "^5.4|^6.0|^7.0",
+                "symfony/webpack-encore-bundle": "^1.15"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "thanks": {
+                    "name": "symfony/ux",
+                    "url": "https://github.com/symfony/ux"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\UX\\TwigComponent\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Twig components for Symfony",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "components",
+                "symfony-ux",
+                "twig"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/ux-twig-component/tree/v2.13.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-11-08T14:37:05+00:00"
+        },
+        {
             "name": "symfony/validator",
             "version": "v6.3.8",
             "source": {
@@ -7032,6 +7257,110 @@
                 }
             ],
             "time": "2023-11-06T10:58:05+00:00"
+        },
+        {
+            "name": "symfonycasts/reset-password-bundle",
+            "version": "v1.18.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SymfonyCasts/reset-password-bundle.git",
+                "reference": "9906cebac5676adf5d05384dfeebd7cac7c0da83"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SymfonyCasts/reset-password-bundle/zipball/9906cebac5676adf5d05384dfeebd7cac7c0da83",
+                "reference": "9906cebac5676adf5d05384dfeebd7cac7c0da83",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.2.5",
+                "symfony/config": "^5.4 | ^6.0",
+                "symfony/dependency-injection": "^5.4 | ^6.0",
+                "symfony/deprecation-contracts": "^2.2 | ^3.0",
+                "symfony/http-kernel": "^5.4 | ^6.0"
+            },
+            "conflict": {
+                "doctrine/orm": "<2.7",
+                "php": ">=8.1 <8.1.10"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.0",
+                "doctrine/doctrine-bundle": "^2.0.3",
+                "doctrine/orm": "^2.7",
+                "symfony/framework-bundle": "^5.4 | ^6.0",
+                "symfony/phpunit-bridge": "^5.4 | ^6.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "SymfonyCasts\\Bundle\\ResetPassword\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Symfony bundle that adds password reset functionality.",
+            "support": {
+                "issues": "https://github.com/SymfonyCasts/reset-password-bundle/issues",
+                "source": "https://github.com/SymfonyCasts/reset-password-bundle/tree/v1.18.0"
+            },
+            "time": "2023-09-19T14:10:50+00:00"
+        },
+        {
+            "name": "symfonycasts/tailwind-bundle",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SymfonyCasts/tailwind-bundle.git",
+                "reference": "df70d0d1dd15a61636a479722e25fef2a4c8fe87"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SymfonyCasts/tailwind-bundle/zipball/df70d0d1dd15a61636a479722e25fef2a4c8fe87",
+                "reference": "df70d0d1dd15a61636a479722e25fef2a4c8fe87",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "symfony/asset-mapper": "^6.3|^7.0",
+                "symfony/console": "^5.4|^6.3|^7.0",
+                "symfony/http-client": "^5.4|^6.3|^7.0",
+                "symfony/process": "^5.4|^6.3|^7.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "1.11.x-dev",
+                "symfony/filesystem": "^6.3|^7.0",
+                "symfony/framework-bundle": "^6.3|^7.0",
+                "symfony/phpunit-bridge": "^6.3|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfonycasts\\TailwindBundle\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Weaver",
+                    "homepage": "https://symfonycasts.com"
+                }
+            ],
+            "description": "Delightful Tailwind Support for Symfony + AssetMapper",
+            "keywords": [
+                "asset-mapper",
+                "tailwind"
+            ],
+            "support": {
+                "issues": "https://github.com/SymfonyCasts/tailwind-bundle/issues",
+                "source": "https://github.com/SymfonyCasts/tailwind-bundle/tree/v0.2.1"
+            },
+            "time": "2023-11-08T19:29:49+00:00"
         },
         {
             "name": "twig/extra-bundle",
