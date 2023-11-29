@@ -1,14 +1,14 @@
 <nav class="bg-white border-gray-200 dark:bg-gray-900">
     <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-        <a href="https://flowbite.com" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+        <a href="{{ path('app_home_index') }}" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="https://symfony.com/logos/symfony_white_03.png" class="h-8" alt="Flowbite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">StarterKit</span>
         </a>
         <div class="flex items-center space-x-6 rtl:space-x-reverse">
             {% if is_granted('ROLE_USER')  %}
-                <a href="{{ path('app_security_logout') }}" class="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Logout</a>
+                <a href="{{ path('app_security_logout') }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Logout</a>
             {% else %}
-                <a href="{{ path('app_security_login') }}" class="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Login</a>
+                <a href="{{ path('app_security_login') }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login</a>
             {% endif %}
         </div>
     </div>
