@@ -1,24 +1,13 @@
-{% extends 'base.html.twig' %}
+{% extends 'security_layout.html.twig' %}
 
 {% block title %}Password Reset Email Sent{% endblock %}
 
-{% block body %}
-    <section class="bg-gray-50 dark:bg-gray-900">
-        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-            <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
-                <img class="w-8 h-8 mr-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" alt="logo">
-                Flowbite
-            </a>
-            <div class="w-full p-6 bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md dark:bg-gray-800 dark:border-gray-700 sm:p-8">
-                <h2 class="mb-1 text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-                    Change Password
-                </h2>
-                <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-                    If an account matching your email exists, then an email was just sent that contains a link that you can use to reset your password.
-                    This link will expire in {{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle') }}.
-                </p>
-                <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">If you don't receive an email please check your spam folder or <a class="inline-flex items-center text-lg text-blue-600 dark:text-blue-500 hover:underline" href="{{ path('app_forgot_password_request') }}">try again</a>.</p>
-            </div>
-        </div>
-    </section>
+{% block card_title %}Change Password{% endblock %}
+
+{% block content %}
+        <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+            If an account matching your email exists, then an email was just sent that contains a link that you can use to reset your password.
+            This link will expire in {{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle') }}.
+        </p>
+        <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">If you don't receive an email please check your spam folder or <a class="inline-flex items-center text-lg text-blue-600 dark:text-blue-500 hover:underline" href="{{ path('app_forgot_password_request') }}">try again</a>.</p>
 {% endblock %}
