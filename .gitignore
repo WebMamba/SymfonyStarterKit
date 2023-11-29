@@ -22,3 +22,7 @@
 ###> symfony/asset-mapper ###
 /public/assets/
 ###< symfony/asset-mapper ###
+
+###> phpstan/phpstan ###
+phpstan.neon
+###< phpstan/phpstan ###
