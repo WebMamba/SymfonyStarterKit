@@ -1,6 +1,8 @@
 # SymfonyStarterKit
 A simple StarterKit to help you getting starded blazzing fast on a new Symfony project.
 
+<img width="1439" alt="Capture d’écran 2023-11-29 à 15 56 37" src="https://github.com/WebMamba/SymfonyStarterKit/assets/32077734/21229afc-bef3-4e4b-bf16-51926a23f293">
+
 ## Features
 - Basic HomePage
 - Login/SignUp/ResetPassword pages already fonctionnal
@@ -25,3 +27,5 @@ The same as the one mentions here: https://symfony.com/doc/current/setup.html#te
 6. build your assets: `bin/console tailwind:build`
 
 And Voilà ✨ you are ready to go! Enjoy
+
+<img width="1213" alt="Capture d’écran 2023-11-29 à 15 56 51" src="https://github.com/WebMamba/SymfonyStarterKit/assets/32077734/5db79ada-1c39-4d2e-8f1d-2caa5b26d2e0">
