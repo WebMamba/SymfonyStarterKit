@@ -30,6 +30,7 @@ class SecurityControllerTest extends WebTestCase
         $client->followRedirect();
         $this->assertResponseIsSuccessful();
 
+        self::assertNotFalse($client->getResponse()->getContent());
         $this->assertStringContainsString('Welcome in your dashboard', $client->getResponse()->getContent());
     }
 }
