@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Security;
 
 use App\Entity\User;
@@ -14,6 +16,7 @@ class RegisterUser
         private readonly UserRepository $userRepository,
         private readonly Security $security
     ) {}
+
     public function register(User $user): void
     {
         $hashedPassword = $this->passwordHasher->hashPassword(

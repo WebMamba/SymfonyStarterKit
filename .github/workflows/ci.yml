@@ -15,10 +15,13 @@ jobs:
         with:
           php-version: '8.2'
           extensions: mbstring, xml, ctype, iconv, intl, pdo, dom, filter, gd, iconv, json, mbstring
+          tools: php-cs-fixer
       - name: Install Composer dependencies
         run: composer install --no-progress --prefer-dist --optimize-autoloader
       - name: Run PHPStan
         run: vendor/bin/phpstan analyse
+      - name: Run PHPCsFixer
+        run: php-cs-fixer fix src tests --config=.php-cs-fixer.php --dry-run --diff --allow-risky=yes
       - name: Install test DB
         run: php bin/console doctrine:database:create --env=test
       - name: Run migrations
