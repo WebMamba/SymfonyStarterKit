@@ -16,7 +16,7 @@
 return [
     'app' => [
         'path' => 'app.js',
-        'preload' => true,
+        'entrypoint' => true,
     ],
     '@hotwired/stimulus' => [
         'url' => 'https://cdn.jsdelivr.net/npm/@hotwired/stimulus@3.2.2/+esm',
